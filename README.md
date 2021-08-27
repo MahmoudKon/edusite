@@ -2,7 +2,7 @@
 
 -   Clone the project.
     ```
-        git clone https://github.com/RahmaAlNssar/edusite.git
+        git clone https://github.com/MahmoudKon/edusite.git
     ```
 -   Go to the folder application using `cd edusite` command on your cmd or terminal
 -   Run `composer install` on your cmd or terminal.
