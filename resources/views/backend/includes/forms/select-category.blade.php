@@ -1,6 +1,6 @@
 <div class="form-group">
-    <label>Category name:</label>
-    <select class="select2 form-control" name="category_id" data-placeholder="Select a category...">
+    <label>Category name <span class="text-danger">*</span></label>
+    <select class="select2 form-control" name="category_id" data-placeholder="Select Course">
         @forelse ($categories as $category)
         <option value="{{ $category->id }}"
             {{ $category->visibility == 0 ? (isset($row) ? ($row->category_id == $category->id ? '' : 'disabled') : 'disabled') : '' }}

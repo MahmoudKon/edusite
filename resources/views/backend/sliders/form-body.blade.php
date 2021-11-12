@@ -7,7 +7,7 @@
 
             {{-- START SLICE Title --}}
             <div class="form-group">
-                <label>Slice Title:</label>
+                <label>Slice Title <span class="text-danger">*</span></label>
                 <div class="input-group">
                     <div class="input-group-prepend"> <span class="input-group-text"> <i class="la la-header"></i>
                         </span>
@@ -21,7 +21,7 @@
 
             {{-- START SLICE DESCRIPTION --}}
             <div class="form-group">
-                <label>Slice Short Description:</label>
+                <label>Slice Short Description <span class="text-danger">*</span></label>
                 <div class="input-group">
                     <div class="input-group-prepend"> <span class="input-group-text"> <i class="la la-italic"></i>
                         </span>

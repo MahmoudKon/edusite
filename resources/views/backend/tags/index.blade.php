@@ -16,6 +16,6 @@
 </div>
 
 {{-- START INCLUDE SIDEBARE --}}
-@include('backend.categories.sidebare')
+@include('backend.includes.cards.sidebare')
 {{-- END INCLUDE SIDEBARE --}}
 @endsection

@@ -12,11 +12,19 @@
 	'use strict';
 
   // Basic Select2 select
-	$(".select2").select2();
+	$(".select2").select2({
+        placeholder: $(this).data('placeholder') || "Select Option",
+    });
+
+    $('.select2-all').select2({
+        placeholder: $(this).data('placeholder') || "Select Option",
+        minimumResultsForSearch: Infinity,
+        maximumSelectionLength: $(this).data('max-length') || 4,
+    });
 
     // Single Select Placeholder
     $(".select2-placeholder").select2({
-      placeholder: "Select a state",
+      placeholder: "Select Status",
       allowClear: true
     });
 

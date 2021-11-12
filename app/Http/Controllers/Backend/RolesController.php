@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\DataTables\RolesDataTable;
 use App\Http\Controllers\BackendController;
-use App\DataTables\TagsDataTable;
-use App\Http\Requests\TagRequest;
-use App\Models\Tag;
+use App\Http\Requests\RoleRequest;
 use Exception;
+use Spatie\Permission\Models\Role;
 
-class TagsController extends BackendController
+class RolesController extends BackendController
 {
-    public function __construct(TagsDataTable $dataTable, Tag $tag)
+    public function __construct(RolesDataTable $dataTable, Role $role)
     {
-        parent::__construct($dataTable, $tag);
+        parent::__construct($dataTable, $role);
     }
 
     public function index()
@@ -21,7 +21,7 @@ class TagsController extends BackendController
             if (request()->ajax())
                 return $this->dataTable->render('backend.includes.tables.rows');
 
-            return view('backend.tags.index', ['count' => Tag::count()]);
+            return view('backend.categories.index', ['count' => Role::count()]);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
@@ -36,11 +36,11 @@ class TagsController extends BackendController
         }
     }
 
-    public function store(TagRequest $request)
+    public function store(RoleRequest $request)
     {
         try {
-            Tag::create($request->except(['id']));
-            return response()->json(['message' => 'Your Tag has been created!', 'icon' => 'success', 'count' => Tag::count()]);
+            Role::create($request->except(['id']));
+            return response()->json(['message' => 'Your Role has been created!', 'icon' => 'success', 'count' => Role::count()]);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
@@ -49,18 +49,18 @@ class TagsController extends BackendController
     public function edit($id)
     {
         try {
-            $row = Tag::findOrFail($id);
+            $row = Role::findOrFail($id);
             return view('backend.includes.forms.form-update', compact('row'));
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
     }
 
-    public function update(TagRequest $request, Tag $tag)
+    public function update(RoleRequest $request, Role $role)
     {
         try {
-            $tag->update($request->except(['id']));
-            return response()->json(['message' => 'Your Tag has been created!', 'icon' => 'success', 'count' => Tag::count()]);
+            $role->update($request->except(['id']));
+            return response()->json(['message' => 'Your Role has been updated!', 'icon' => 'success']);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }

@@ -22,6 +22,14 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         Route::post('comments/multidelete', 'CommentsController@multidelete')->name('comments.multidelete');
 
         Route::group(['middleware' => ['IsAdmin']], function () {
+            Route::resource('roles', 'RolesController');
+            Route::post('roles/multidelete', 'RolesController@multidelete')->name('roles.multidelete');
+            Route::post('roles/visibility-toggle/{category}', 'RolesController@visibilityToggle')->name('roles.visibility-toggle');
+
+            Route::resource('permissions', 'PermissionsController');
+            Route::post('permissions/multidelete', 'PermissionsController@multidelete')->name('permissions.multidelete');
+            Route::post('permissions/visibility-toggle/{category}', 'PermissionsController@visibilityToggle')->name('permissions.visibility-toggle');
+
             Route::resource('categories', 'CategoriesController');
             Route::post('categories/multidelete', 'CategoriesController@multidelete')->name('categories.multidelete');
             Route::post('categories/visibility-toggle/{category}', 'CategoriesController@visibilityToggle')->name('categories.visibility-toggle');

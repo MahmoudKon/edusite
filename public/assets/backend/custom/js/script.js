@@ -1,5 +1,4 @@
 $(function () {
-
     $.ajaxSetup({
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
     }); // TO SEND THE CSRF TOKEN WITH AJAX REQUEST
@@ -52,6 +51,7 @@ $(function () {
             success: function (data, textStatus, jqXHR) {
                 modal.find('.form-body').empty().append(data);
                 modal.removeClass('load').modal('show');
+                $(".select2").select2();
             },
             error: function(jqXhr) {
                 if (jqXhr.readyState == 0)
@@ -69,7 +69,7 @@ $(function () {
         e.preventDefault();
         let form = $(this);
 
-        form.find('span.error').fadeOut(200);
+        form.find('span.error').fadeOut(100);
         form.parent().addClass('load');
 
         $.ajax({
@@ -86,6 +86,7 @@ $(function () {
                 $('.modal').modal("hide");
                 toast(data.message, null, data.icon);
                 form.trigger("reset");
+                $("select").val('').trigger('change');
                 rows();
                 $('#recourds-count').text(data.count);
             },

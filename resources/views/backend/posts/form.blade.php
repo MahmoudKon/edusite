@@ -1,6 +1,6 @@
 {{-- START POSTS Title --}}
 <div class="form-group">
-    <label>Post Title:</label>
+    <label>Post Title <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend"> <span class="input-group-text"> <i class="la la-list"></i> </span>
         </div>
@@ -41,7 +41,7 @@
 
 {{-- START POSTS DESCRIPTION --}}
 <div class="form-group">
-    <label>Post Descrption:</label>
+    <label>Post Descrption <span class="text-danger">*</span></label>
     <textarea class="summernote" name="desc">{{ $row->desc ?? old('desc') }}</textarea>
     <span class="red error" id="desc-error"></span>
 </div>

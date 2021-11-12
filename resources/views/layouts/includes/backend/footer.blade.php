@@ -13,6 +13,9 @@
 
 {{-- ************** START VENDOR JS ************** --}}
 <script type="text/javascript" src="{{ path('vendors/js/vendors.min.js') }}"></script>
+<script type="text/javascript" src="{{ path('vendors/js/forms/toggle/bootstrap-switch.min.js') }}"></script>
+<script type="text/javascript" src="{{ path('vendors/js/forms/toggle/bootstrap-checkbox.min.js') }}"></script>
+<script type="text/javascript" src="{{ path('vendors/js/forms/toggle/switchery.min.js') }}"></script>
 <script type="text/javascript" src="{{ path('vendors/js/forms/select/select2.full.min.js') }}"></script>
 <script type="text/javascript" src="{{ path('vendors/js/tables/datatable/datatables.min.js') }}"></script>
 <script type="text/javascript" src="{{ path('vendors/js/tables/datatable/buttons.bootstrap4.min.js') }}"></script>
@@ -29,6 +32,7 @@
 <script type="text/javascript" src="{{ path('js/core/app.js') }}"></script>
 <script type="text/javascript" src="{{ path('js/scripts/customizer.js') }}"></script>
 <script type="text/javascript" src="{{ path('js/scripts/forms/select/form-select2.js') }}"></script>
+<script type="text/javascript" src="{{ path('js/scripts/forms/switch.js') }}"></script>
 {{-- ************** END MODERN JS ************** --}}
 
 {{-- ************** START SWEETALERT JS ************** --}}

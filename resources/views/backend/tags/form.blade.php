@@ -1,6 +1,6 @@
 {{-- START TAG NAME --}}
 <div class="form-group">
-    <label>Tag Name:</label>
+    <label>Tag Name <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="la la-tag"></i> </span>
@@ -14,7 +14,7 @@
 
 {{-- START TAG ICON --}}
 <div class="form-group">
-    <label>Tag Icon:</label>
+    <label>Tag Icon</label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="la la-fonticons"></i> </span>

@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label>Upload Image :</label>
+    <label>Upload Image <span class="text-danger">*</span></label>
     <div id="file-preview">
         <input type="file" name="image" class="form-control input-image" accept="image/*" onchange="previewFile(this)">
         <div>

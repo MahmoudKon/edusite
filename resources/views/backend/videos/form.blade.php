@@ -2,7 +2,7 @@
     <div class="col-md-7">
         {{-- START VIDEO Title --}}
         <div class="form-group">
-            <label>Video Title:</label>
+            <label>Video Title <span class="text-danger">*</span></label>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="la la-list"></i> </span>
@@ -16,7 +16,7 @@
 
         {{-- START VIDEO SRC --}}
         <div class="form-group">
-            <label>Video SRC:</label>
+            <label>Video SRC <span class="text-danger">*</span></label>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="la la-file-video-o"></i> </span>
@@ -65,7 +65,7 @@
     {{-- START VIDEO DESCRIPTION --}}
     <div class="col-md-12">
         <div class="form-group">
-            <label>Video Description:</label>
+            <label>Video Description <span class="text-danger">*</span></label>
             <textarea class="summernote" name="desc">{{ $row->desc ?? '' }}</textarea>
             <span class="red error" id="desc-error"></span>
         </div>

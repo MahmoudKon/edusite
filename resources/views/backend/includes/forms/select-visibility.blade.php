@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label>Visibility:</label>
+    <label>Visibility <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fas fa-lightbulb"></i> </span>

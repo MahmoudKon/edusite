@@ -1,6 +1,6 @@
 {{-- START USER NAME --}}
 <div class="form-group">
-    <label>User Name:</label>
+    <label>User Name <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="la la-list"></i> </span>
@@ -14,7 +14,7 @@
 
 {{-- START EMAIL ORDER --}}
 <div class="form-group">
-    <label>Email:</label>
+    <label>Email <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fas fa-mail"></i> </span>
@@ -28,7 +28,7 @@
 
 {{-- START PASSWORD --}}
 <div class="form-group">
-    <label>Password:</label>
+    <label>Password <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fas fa-lock"></i> </span>

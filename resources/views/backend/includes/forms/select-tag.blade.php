@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label>Select Tags:</label>
+    <label>Select Tags <span class="text-danger">*</span></label>
     <select data-placeholder="Select a tags..." class="select2-icons form-control" multiple name="tags[]">
         @forelse ($tags as $tag)
         <option value="{{ $tag->id }}" data-icon=" {{ $tag->icon }}"

@@ -11,6 +11,26 @@
             {{-- START DASHBOARD LINK --}}
 
             @if (auth()->user()->is_admin)
+            {{-- START ROLES LINKS --}}
+            <li class="nav-item {{ active('roles') }}">
+                <a href="{{ active('roles') ? 'javascript:void(0)' : route('backend.roles.index') }}">
+                    <i class="la la-binoculars"></i> <span class="menu-title">Roles</span>
+                </a>
+            </li>
+            {{-- START ROLES LINKS --}}
+            @endif
+
+            @if (auth()->user()->is_admin)
+            {{-- START PERMISSIONS LINKS --}}
+            <li class="nav-item {{ active('permissions') }}">
+                <a href="{{ active('permissions') ? 'javascript:void(0)' : route('backend.permissions.index') }}">
+                    <i class="la la-hand-stop-o"></i> <span class="menu-title">Permissions</span>
+                </a>
+            </li>
+            {{-- START PERMISSIONS LINKS --}}
+            @endif
+
+            @if (auth()->user()->is_admin)
             {{-- START CATEGORIES LINKS --}}
             <li class="nav-item {{ active('categories') }}">
                 <a href="{{ active('categories') ? 'javascript:void(0)' : route('backend.categories.index') }}">

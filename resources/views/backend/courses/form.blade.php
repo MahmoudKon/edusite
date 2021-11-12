@@ -1,6 +1,6 @@
 {{-- START COURSE Title --}}
 <div class="form-group">
-    <label>Course Title:</label>
+    <label>Course Title <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend"> <span class="input-group-text"> <i class="la la-header"></i> </span>
         </div>
@@ -23,7 +23,7 @@
             <div class="col-md-6">
                 {{-- START COURSE PRICE --}}
                 <div class="form-group">
-                    <label>Course Price:</label>
+                    <label>Course Price <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fas fa-dollar-sign"></i> </span>
@@ -46,7 +46,7 @@
             <div class="col-md-4 discount">
                 {{-- START COURSE DISCOUNT --}}
                 <div class="form-group">
-                    <label>Course Discount:</label>
+                    <label>Course Discount <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fas fa-percent"></i> </span>
@@ -63,7 +63,7 @@
             <div class="col-md-4 removed">
                 {{-- START COURSE DISCOUNT START DATE --}}
                 <div class="form-group">
-                    <label>Discount Start Date:</label>
+                    <label>Discount Start Date <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fas fa-calendar-alt"></i> </span>
@@ -80,7 +80,7 @@
             <div class="col-md-4 removed">
                 {{-- START COURSE DISCOUNT END DATE --}}
                 <div class="form-group">
-                    <label>Discount End Date:</label>
+                    <label>Discount End Date <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fas fa-calendar-alt"></i> </span>
@@ -106,7 +106,7 @@
 
 {{-- START COURSE DESCRIPTION --}}
 <div class="form-group">
-    <label>Course Descrption:</label>
+    <label>Course Descrption <span class="text-danger">*</span></label>
     <textarea class="summernote" name="desc">{{ $row->desc ?? old('desc') }}</textarea>
     <span class="red error" id="desc-error"></span>
 </div>

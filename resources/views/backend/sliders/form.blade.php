@@ -1,6 +1,6 @@
 {{-- START SLIDER NAME --}}
 <div class="form-group">
-    <label>Slider Name:</label>
+    <label>Slider Name <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend"> <span class="input-group-text"> <i class="la la-bookmark"></i> </span>
         </div>

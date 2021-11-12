@@ -1,6 +1,6 @@
 {{-- START CATEGORY NAME --}}
 <div class="form-group">
-    <label>Category Name:</label>
+    <label>Category Name <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="la la-list"></i> </span>
@@ -14,7 +14,7 @@
 
 {{-- START CATEGORY ORDER --}}
 <div class="form-group">
-    <label>Category order:</label>
+    <label>Category order <span class="text-danger">*</span></label>
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fas fa-sort-numeric-up-alt"></i> </span>
