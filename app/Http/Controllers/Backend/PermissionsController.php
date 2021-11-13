@@ -18,7 +18,6 @@ class PermissionsController extends BackendController
 
     public function index()
     {
-        // dd(Permission::first()->roles->first()->name);
         try {
             if (request()->ajax())
                 return $this->dataTable->render('backend.includes.tables.rows');

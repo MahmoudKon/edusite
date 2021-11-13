@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use App\Traits\UploadFile;
 use App\Models\User;
 use Exception;
+use Spatie\Permission\Models\Role;
 
 class UsersController extends BackendController
 {
@@ -23,7 +24,9 @@ class UsersController extends BackendController
     {
         try {
             DB::beginTransaction();
-            User::create($request->validated());
+            $user = User::create($request->validated());
+            $user->assignRole($request->roles);
+            $user->givePermissionTo($request->permissions);
             DB::commit();
             toast('Your User has been created!', 'success');
             return response()->json(['redirect' => route('backend.users.index')]);
@@ -39,11 +42,20 @@ class UsersController extends BackendController
             if ($request->has('image'))
                 $this->remove($user->image, 'users');
             $user->update($request->validated());
+            $user->syncRoles($request->roles);
+            $user->syncPermissions($request->permissions);
             DB::commit();
             toast('Your User has been updated!', 'success');
             return response()->json(['redirect' => route('backend.users.index')]);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
+    }
+
+    public function append()
+    {
+        return [
+            'roles' => Role::all()
+        ];
     }
 }

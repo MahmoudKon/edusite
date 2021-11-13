@@ -43,15 +43,12 @@
 
     {{-- ************** START MODERN CSS ************** --}}
     <link rel="stylesheet" type="text/css" href="{{ path('vendors/css/forms/selects/select2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ path('vendors/css/forms/toggle/bootstrap-switch.min.css') }}">
     {{-- ************** END MODERN CSS ************** --}}
 
     {{-- ************** START DATATABLES ************** --}}
     <link rel="stylesheet" type="text/css" href="{{ path('vendors/css/tables/datatable/datatables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ path('vendors/css/tables/extensions/buttons.dataTables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ path('css/plugins/animate/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ path('css/plugins/forms/switch.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ path('css/core/colors/palette-switch.css') }}">
     {{-- ************** START DATATABLES ************** --}}
 
     {{-- ************** START CUSTOM CSS ************** --}}

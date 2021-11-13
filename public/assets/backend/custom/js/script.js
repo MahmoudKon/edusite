@@ -12,6 +12,11 @@ $(function () {
     document.addEventListener('wheel', (e) => (e.ctrlKey || e.metaKey) && e.preventDefault(), { passive: false });
 
     $('body').on('contextmenu', 'img', function (e) { e.preventDefault(); });
+    $('.page-reload').click(function (e) {
+        e.preventDefault();
+        $('body').addClass('load');
+        location.reload();
+    });
 
     function rows() {
         $('#load-data').addClass('load');
@@ -26,12 +31,44 @@ $(function () {
                     return false;
                 toast('File: ' + jqXhr.responseJSON.file + ' (Line: ' + jqXhr.responseJSON.line + ')', jqXhr.responseJSON.message, icon = 'error')
             },
-            complete: function () { $('#load-data').removeClass('load'); }
+            complete: function () { $('#load-data').removeClass('load'); initPluginElements();}
         });
     } // AJAX CODE TO LOAD THE DATA TABLE
 
+    $('a[data-action="reload"]').click(function () {rows();});
+
     // THIS FOR CHECK IF THE PAGE HAVE TABLE OR NOT, IF HAVE THEN RUN THE AJAX CODE TO GET THE TABLE DATA
-    if ($('#load-data').length) { rows(); }
+    if ($('#load-data').length) rows();
+
+    if ($('.get-permissions').length && $('.get-permissions').val().length)
+        getRolePermissions($('.get-permissions').val());
+
+    $(document).on('change', '.get-permissions', function() {
+        getRolePermissions($(this).val());
+    });
+
+    function getRolePermissions(roles)
+    {
+        let ele = $('#get-permissions');
+        ele.addClass('load');
+        $.ajax({
+            url: '/get-role-permissions',
+            type: "get",
+            data: {"roles": roles},
+            success: function (data, textStatus, jqXHR) {
+                ele.empty().append(data).removeClass('load');
+            },
+            error: function(jqXhr) {
+                if (jqXhr.readyState == 0)
+                    return false;
+                if (jqXhr.responseJSON.line) {
+                    toast('File: ' + jqXhr.responseJSON.file + ' (Line: ' + jqXhr.responseJSON.line + ')', jqXhr.responseJSON.message)
+                } else {
+                    toast(jqXhr.responseJSON, title = null);
+                }
+            },
+        });
+    }
 
     $('body').on('click', '.show-modal-form', function (e) {
         e.preventDefault();
@@ -51,7 +88,7 @@ $(function () {
             success: function (data, textStatus, jqXHR) {
                 modal.find('.form-body').empty().append(data);
                 modal.removeClass('load').modal('show');
-                $(".select2").select2();
+                initPluginElements();
             },
             error: function(jqXhr) {
                 if (jqXhr.readyState == 0)
@@ -246,5 +283,9 @@ $(function () {
             title: title,
             text: message,
         })
+    }
+
+    function initPluginElements() {
+        $(".select2").select2();
     }
 });

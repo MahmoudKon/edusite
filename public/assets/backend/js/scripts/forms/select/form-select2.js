@@ -19,7 +19,7 @@
     $('.select2-all').select2({
         placeholder: $(this).data('placeholder') || "Select Option",
         minimumResultsForSearch: Infinity,
-        maximumSelectionLength: $(this).data('max-length') || 4,
+        maximumSelectionLength: $(this).data("length") || 4,
     });
 
     // Single Select Placeholder

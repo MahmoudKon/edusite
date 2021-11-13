@@ -13,7 +13,7 @@
     font-size: 18px;
     font-weight: bolder;
     color: #000000;
-    z-index: 10;
+    z-index: 10001;
     animation: load .6s linear infinite;
 }
 
@@ -26,7 +26,7 @@
     bottom: 0;
     right: 0;
     background-color: rgb(207 216 234 / 50%);
-    z-index: 10;
+    z-index: 10000;
     height: 100%;
 }
 

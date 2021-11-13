@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\DataTables\RolesDataTable;
 use App\Http\Controllers\BackendController;
 use App\Http\Requests\RoleRequest;
+use App\Models\User;
 use Exception;
 use Spatie\Permission\Models\Role;
 
@@ -21,7 +22,7 @@ class RolesController extends BackendController
             if (request()->ajax())
                 return $this->dataTable->render('backend.includes.tables.rows');
 
-            return view('backend.categories.index', ['count' => Role::count()]);
+            return view('backend.roles.index', ['count' => Role::count()]);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
@@ -64,5 +65,11 @@ class RolesController extends BackendController
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 500);
         }
+    }
+
+    public function getRolePermissions()
+    {
+        $roles = Role::whereIn('id', request()->roles)->get();
+        return view('backend.roles.get-role-permissions', compact('roles'));
     }
 }

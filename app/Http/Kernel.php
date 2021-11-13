@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\LogMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -73,6 +74,8 @@ class Kernel extends HttpKernel
         'IsAdmin'                 => \App\Http\Middleware\IsAdmin::class,
         'AdminOrTeacher'          => \App\Http\Middleware\AdminOrTeacher::class,
         'ShareAuthFavorites'      => \App\Http\Middleware\ShareAuthFavorites::class,
-        'ShareSliderImages'       => \App\Http\Middleware\ShareSliderImages::class
+        'ShareSliderImages'       => \App\Http\Middleware\ShareSliderImages::class,
+
+        'LogMiddleware' => LogMiddleware::class,
     ];
 }

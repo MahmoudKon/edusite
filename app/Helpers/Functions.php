@@ -48,3 +48,10 @@ function checkOwner($id)
         ? ' | <span class="text-info text-bold-700 text-uppercase">owner</span>'
         : '';
 }
+
+function generateUrl()
+{
+    $prefix = request()->route()->action['prefix']; // Get The Prefix Of Route
+    $url = str_replace($prefix, '', request()->route()->uri);
+    return explode('/', $url);
+}

@@ -26,6 +26,7 @@ trait UploadFile
 
     public function remove($file, $folder)
     {
+        if (!$file) return true;
         $path = public_path('uploads/' . $folder . '/' . $file);
         if (File::exists($path))
             unlink($path);

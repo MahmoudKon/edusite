@@ -2,12 +2,12 @@
 
 namespace App\DataTables;
 
-use App\Models\User;
+use App\Models\Log;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
-class UsersDataTable extends DataTable
+class LogsDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -19,37 +19,32 @@ class UsersDataTable extends DataTable
     {
         return datatables()
             ->eloquent($query)
-            ->addColumn('no_ajax', function () {
-                return $no_ajax = '';
+            ->editColumn('method', function ($log) {
+                if ($log->method == "GET")
+                    return "<span class='badge badge-info'>GET</span>";
+
+                if ($log->method == "POST")
+                    return "<span class='badge badge-warning'>POST</span>";
+
+                if ($log->method == "PUT")
+                    return "<span class='badge badge-primary'>PUT</span>";
+
+                if ($log->method == "DELETE")
+                    return "<span class='badge badge-danger'>DELETE</span>";
             })
-            ->editColumn('image', function ($user) {
-                return '<img src="' . $user->image_url . '" class="img-thumbnail" width="90px">';
-            })
-            ->editColumn('roles', function ($user) {
-                $roles = '';
-                foreach ($user->roles as $role)
-                    $roles .= $role->name . ', ';
-                return rtrim($roles, ', ');
-            })
-            ->filterColumn('roles', function ($query, $keywords) {
-                return $query->whereHas('roles', function ($query) use ($keywords) {
-                    return $query->where('name', 'like', "%$keywords%");
-                });
-            })
-            ->addColumn('check', 'backend.includes.tables.checkbox')
-            ->addColumn('action', 'backend.includes.buttons.table-buttons')
-            ->rawColumns(['action', 'check', 'image']);
+            ->addColumn('action', 'backend.logs.action')
+            ->rawColumns(['method', 'action']);
     }
 
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\User $model
+     * @param \App\Models\Log $model
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function query(User $model)
+    public function query(Log $model)
     {
-        return $model->newQuery()->with('roles');
+        return $model->newQuery()->with('user');
     }
 
     /**
@@ -57,11 +52,10 @@ class UsersDataTable extends DataTable
      *
      * @return \Yajra\DataTables\Html\Builder
      */
-
     public function html()
     {
         return $this->builder()
-            ->setTableId('user-table')
+            ->setTableId('logsdatatable-table')
             ->columns($this->getColumns())
             ->setTableAttribute('class', 'table table-bordered table-striped table-sm w-100 dataTable')
             ->minifiedAjax()
@@ -69,8 +63,6 @@ class UsersDataTable extends DataTable
             ->lengthMenu([[5, 10, 20, 25, 30, -1], [5, 10, 20, 25, 30, 'All']])
             ->pageLength(5)
             ->buttons([
-                Button::make()->text('<i class="fa fa-plus"></i>')->addClass('btn btn-outline-info')->action("window.location.href = " . '"' . route('backend.users.create') . '"')->titleAttr('Create New User (c)')->key('c'),
-                Button::make()->text('<i class="fas fa-trash"></i>')->addClass('btn btn-outline-danger multi-delete')->titleAttr('Multi Delete (d)')->key('d'),
                 Button::make('print')->text('<i class="fa fa-print"></i>')->addClass('btn btn-outline-success')->titleAttr('Print (p)')->key('p'),
                 Button::make('excel')->text('<i class="fas fa-file-excel"></i>')->addClass('btn btn-outline-info')->titleAttr('Excel (e)')->key('e'),
                 Button::make('csv')->text('<i class="fas fa-file-csv"></i>')->addClass('btn btn-outline-primary')->titleAttr('CSV (s)')->key('s'),
@@ -79,7 +71,7 @@ class UsersDataTable extends DataTable
             ->responsive(true)
             ->parameters([
                 'initComplete' => " function () {
-                    this.api().columns([2,3,4]).every(function () {
+                    this.api().columns([1,2,3,4,5]).every(function () {
                         var column = this;
                         var input = document.createElement(\"input\");
                         $(input).appendTo($(column.footer()).empty())
@@ -100,13 +92,13 @@ class UsersDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::make('id')->hidden(),
-            Column::make('check')->title('<label class="skin skin-square"><input data-color="red" type="checkbox" id="check-all"></label>')->exportable(false)->printable(false)->orderable(false)->searchable(false)->width(15)->addClass('text-center'),
-            Column::make('name')->footer('Name')->width(300),
-            Column::make('email')->footer('Email'),
-            Column::make('roles')->footer('Roles'),
-            Column::make('image')->orderable(false)->searchable(false),
-            Column::computed('action')->exportable(false)->printable(false)->width(75)->addClass('text-center'),
+            Column::make('user.name')->title('User'),
+            Column::make('url')->title('URL'),
+            Column::make('page')->title('Page'),
+            Column::make('method')->title('Method'),
+            Column::make('controller')->title('Controller'),
+            Column::make('model')->title('Model'),
+            Column::make('action')->title('Action'),
         ];
     }
 
@@ -117,6 +109,6 @@ class UsersDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'User_' . date('YmdHis');
+        return 'Logs_' . date('YmdHis');
     }
 }

@@ -88,6 +88,6 @@ class User extends Authenticatable implements JWTSubject
 
     public function getImageUrlAttribute()
     {
-        return asset('uploads/users/' . $this->image);
+        return $this->image ? asset('uploads/users/' . $this->image) : null;
     } // return image path
 }
