@@ -11,6 +11,16 @@
             {{-- START DASHBOARD LINK --}}
 
             @if (auth()->user()->is_admin)
+            {{-- START LOGS LINKS --}}
+            <li class="nav-item {{ active('logs') }}">
+                <a href="{{ active('logs') ? 'javascript:void(0)' : route('backend.logs.index') }}">
+                    <i class="la la-search"></i> <span class="menu-title">Logs</span>
+                </a>
+            </li>
+            {{-- START LOGS LINKS --}}
+            @endif
+
+            @if (auth()->user()->is_admin)
             {{-- START ROLES LINKS --}}
             <li class="nav-item {{ active('roles') }}">
                 <a href="{{ active('roles') ? 'javascript:void(0)' : route('backend.roles.index') }}">

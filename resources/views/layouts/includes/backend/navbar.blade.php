@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link nav-menu-main page-reload hidden-xs" data-toggle="tooltip" data-original-title="Reload The Page" href="#">
+                        <a class="nav-link nav-menu-main menu-toggle page-reload hidden-xs" data-toggle="tooltip" data-original-title="Reload The Page" href="#">
                             <i class="ft-rotate-cw"></i>
                         </a>
                     </li>

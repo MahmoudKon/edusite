@@ -4,7 +4,7 @@
     <span aria-labelledby="table-optins" class="dropdown-menu mt-1 dropdown-menu-left" x-placement="bottom-end">
 
         <a href="{{ route('backend.' . getModel() . '.show', $id) }}" class="btn btn-outline-primary dropdown-item" target="_blank">
-            <i class="ft-edit"></i> Response
+            <i class="ft-edit"></i> Request
         </a>
     </span>
 </span>
