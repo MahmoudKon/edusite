@@ -5,85 +5,212 @@
     <div class="content-header row">
     </div>
     <div class="content-body">
-        <div id="crypto-stats-3" class="row">
-            <div class="col-xl-4 col-12">
-                <div class="card crypto-card-3 pull-up">
+        <div class="row">
+            {{-- START USERS --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
                     <div class="card-content">
-                        <div class="card-body pb-0">
-                            <div class="row">
-                                <div class="col-2">
-                                    <h1><i class="cc BTC warning font-large-2" title="BTC"></i></h1>
+                        <a href="{{ route('backend.users.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="info">{{ $users }}</h3>
+                                        <h6>USERS</h6>
+                                    </div>
+                                    <div> <i class="fa fa-users info font-large-2 float-right"></i> </div>
                                 </div>
-                                <div class="col-5 pl-2">
-                                    <h4>BTC</h4>
-                                    <h6 class="text-muted">Bitcoin</h6>
-                                </div>
-                                <div class="col-5 text-right">
-                                    <h4>$9,980</h4>
-                                    <h6 class="success darken-4">31% <i class="la la-arrow-up"></i></h6>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: {{ $users }}%"aria-valuenow="{{ $users }}" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <canvas id="btc-chartjs" class="height-75"></canvas>
+                        </a>
+                        <a href="{{ route('backend.users.create') }}" class="btn btn-sm btn-info btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END USERS --}}
+
+            {{-- START CATEGORIES --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <a href="{{ route('backend.categories.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="warning">{{ $categories }}</h3>
+                                        <h6>CATEGORIES</h6>
+                                    </div>
+                                    <div> <i class="fa fa-list warning font-large-2 float-right"></i> </div></div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-warning" role="progressbar" style="width: {{ $categories }}%" aria-valuenow="{{ $categories }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
+                        </a>
+                        <a href="{{ route('backend.categories.index') }}" class="btn btn-sm btn-warning btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END CATEGORIES --}}
+
+            {{-- END POSTS --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <a href="{{ route('backend.posts.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="success">{{ $posts }}</h3>
+                                        <h6>POSTS</h6>
+                                    </div>
+                                    <div> <i class="fa fa-reply-all success font-large-2 float-right"></i> </div>
+                                </div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: {{ $posts }}%" aria-valuenow="{{ $posts }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ route('backend.posts.create') }}" class="btn btn-sm btn-success btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END POSTS --}}
+
+            {{-- START VIDEOS --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <a href="{{ route('backend.videos.index') }}" target="_blank">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="danger">{{ $videos }}
+                                        <h6>VIDEOS</h6>
+                                    </div>
+                                    <div> <i class="fab fa-youtube danger font-large-2 float-right"></i> </div>
+                                </div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: {{ $videos }}%" aria-valuenow="{{ $videos }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </a>
+                            <a href="{{ route('backend.videos.create') }}" class="btn btn-sm btn-danger btn-block mt-1">
+                                <i class="fa fa-plus"></i> <b>Create</b>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-12">
-                <div class="card crypto-card-3 pull-up">
+            {{-- END VIDEOS --}}
+
+            {{-- START TAGS --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
                     <div class="card-content">
-                        <div class="card-body pb-0">
-                            <div class="row">
-                                <div class="col-2">
-                                    <h1><i class="cc ETH blue-grey lighten-1 font-large-2" title="ETH"></i></h1>
+                        <a href="{{ route('backend.tags.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="purple">{{ $tags }}</h3>
+                                        <h6>TAGS</h6>
+                                    </div>
+                                    <div> <i class="fa fa-tags purple font-large-2 float-right"></i> </div>
                                 </div>
-                                <div class="col-5 pl-2">
-                                    <h4>ETH</h4>
-                                    <h6 class="text-muted">Ethereum</h6>
-                                </div>
-                                <div class="col-5 text-right">
-                                    <h4>$944</h4>
-                                    <h6 class="success darken-4">12% <i class="la la-arrow-up"></i></h6>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-purple" role="progressbar" style="width: {{ $tags }}%" aria-valuenow="{{$tags}}" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <canvas id="eth-chartjs" class="height-75"></canvas>
+                        </a>
+                        <a href="{{ route('backend.tags.index') }}" class="btn btn-sm btn-purple btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END TAGS --}}
+
+            {{-- START COURSES --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <a href="{{ route('backend.courses.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="pink">{{ $courses }}</h3>
+                                        <h6>COURSES</h6>
+                                    </div>
+                                    <div> <i class="fa fa-user-graduate pink font-large-2 float-right"></i> </div></div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-pink" role="progressbar" style="width: {{ $courses }}%" aria-valuenow="{{ $courses }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
+                        </a>
+                        <a href="{{ route('backend.courses.create') }}" class="btn btn-sm btn-pink btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END COURSES --}}
+
+            {{-- END ROLES --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <a href="{{ route('backend.roles.index') }}" target="_blank">
+                            <div class="card-body">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="blue-grey">{{ $roles }}</h3>
+                                        <h6>ROLES</h6>
+                                    </div>
+                                    <div> <i class="fa fa-universal-access blue-grey font-large-2 float-right"></i> </div>
+                                </div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-blue-grey" role="progressbar" style="width: {{ $roles }}%" aria-valuenow="{{ $roles }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ route('backend.roles.index') }}" class="btn btn-sm btn-blue-grey btn-block mt-1">
+                            <i class="fa fa-plus"></i> <b>Create</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{-- END ROLES --}}
+
+            {{-- START PERMISSIONS --}}
+            <div class="col-xl-3 col-lg-6 col-12">
+                <div class="card pull-up">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <a href="{{ route('backend.permissions.index') }}" target="_blank">
+                                <div class="media d-flex">
+                                    <div class="media-body text-left">
+                                        <h3 class="teal">{{ $permissions }}
+                                        <h6>PERMISSIONS</h6>
+                                    </div>
+                                    <div> <i class="fa fa-hand-paper teal font-large-2 float-right"></i> </div>
+                                </div>
+                                <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                    <div class="progress-bar bg-gradient-x-teal" role="progressbar" style="width: {{ $permissions }}%" aria-valuenow="{{ $permissions }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </a>
+                            <a href="{{ route('backend.permissions.index') }}" class="btn btn-sm btn-teal btn-block mt-1">
+                                <i class="fa fa-plus"></i> <b>Create</b>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-12">
-                <div class="card crypto-card-3 pull-up">
-                    <div class="card-content">
-                        <div class="card-body pb-0">
-                            <div class="row">
-                                <div class="col-2">
-                                    <h1><i class="cc XRP info font-large-2" title="XRP"></i></h1>
-                                </div>
-                                <div class="col-5 pl-2">
-                                    <h4>XRP</h4>
-                                    <h6 class="text-muted">Balance</h6>
-                                </div>
-                                <div class="col-5 text-right">
-                                    <h4>$1.2</h4>
-                                    <h6 class="danger">20% <i class="la la-arrow-down"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <canvas id="xrp-chartjs" class="height-75"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{-- END PERMISSIONS --}}
         </div>
         <!-- Candlestick Multi Level Control Chart -->
         <!-- Slaes & Purchase Order -->

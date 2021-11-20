@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\UserFollow;
 use Faker\Factory;
 use Illuminate\Support\Facades\Hash;
+use Spatie\Permission\Models\Role;
 
 class UserSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         $faker = Factory::create();
-        User::insert([
+        $admin = User::insert([
             'name'              => 'Admin',
             'email'             => 'admin@app.com',
             'password'          => Hash::make(123),
