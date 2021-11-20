@@ -9,6 +9,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     Route::group(['prefix' => 'dashboard', 'as' => 'backend.', 'middleware' => ['auth', 'AdminOrTeacher']], function () {
         Route::resource('logs', 'LogsController');
+        Route::get('logs/{log}/{field}/show', 'LogsController@showFieldData')->name('logs.field.show');
 
         Route::group(['middleware' => 'LogMiddleware'], function () {
 

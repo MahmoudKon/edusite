@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="{{ path('css/vendors.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ path('css/app.css') }}">
     @endif
+    <link rel="stylesheet" type="text/css" href="{{ path('custom/css/loading.css') }}">
 
     @yield('stype')
 </head>
@@ -66,6 +67,14 @@
 
     <script type="text/javascript" src="{{ path('vendors/js/vendors.min.js') }}"></script>
     <script type="text/javascript" src="{{ path('vendors/js/forms/icheck/icheck.min.js') }}"></script>
+    <script>
+        $('button[type="submit"]').click(function(e) {
+            e.preventDefault();
+            let form = $(this).closest('form');
+            form.closest('.card').addClass('load');
+            form.submit();
+        });
+    </script>
     @yield('script')
 </body>
 

@@ -263,6 +263,31 @@ $(function () {
         })
     }); // MAKE THE DATA IS VISIBILE OR NOT WHEN CLCIK ON THE BUTTON
 
+    $('body').on('click', '.showRequest', function (e) {
+        e.preventDefault();
+        $('#showRequest').modal('show');
+        let selectElement = $('#showRequest .modal-body');
+        selectElement.addClass('load');
+        $.ajax({
+            url: $(this).attr('href'),
+            type: "get",
+            success: function (response, textStatus, jqXHR) {
+                selectElement.closest('.modal').find('.modal-header .modal-tit b').empty().append(response.title);
+                selectElement.empty().html(response.data);
+
+                selectElement.find('nav, div.main-menu, footer').remove();
+                selectElement.find('div.app-content').css('margin-left', 0);
+                selectElement.find('a, button').attr('disabled', true).attr('href', '');
+                selectElement.addClass('load');
+            },
+            error: function (jqXHR) {
+                if (jqXHR.readyState == 0)
+                    return false;
+                toast('File: ' + jqXHR.responseJSON.file + ' (Line: ' + jqXHR.responseJSON.line + ')', jqXHR.responseJSON.message, icon = 'error')
+            },
+        });
+    }); // SHOW RESPONSE CONTENT OF LOG
+
     function toast(message, title = null, icon = 'error', timer = 5000)
     {
         const Toast = Swal.mixin({

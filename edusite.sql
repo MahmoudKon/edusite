@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 27, 2021 at 12:05 PM
+-- Generation Time: Nov 13, 2021 at 02:30 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.19
 
@@ -213,7 +213,8 @@ INSERT INTO `courses` (`id`, `title`, `slug`, `image`, `desc`, `price`, `start_d
 (22, 'Fugit et repellat veritatis blanditiis tempora aliquid aut quaerat quam minus aut voluptas.', 'fugit-et-repellat-veritatis-blanditiis-tempora-aliquid-aut-quaerat-quam-minus-aut-voluptas', 'edcb489cf59aaabbd98c58351191bf41.png', 'Rerum exercitationem itaque libero iusto est id. Labore dicta dicta nam. Eum aut est id sed repellat esse. Omnis non qui id nulla. Animi illum provident officia aspernatur. Sint est atque veritatis et et expedita impedit quasi. Et libero ratione consequatur molestiae vel voluptates in. Qui ea et cumque hic ratione. Ipsam quia dolorem provident voluptatibus ullam ipsum. Repudiandae eius et aut dolor. Qui cumque mollitia optio deleniti enim eaque. Hic error et mollitia non maiores quod omnis. Vitae voluptate quo voluptas ullam quod et repellat. Rerum est qui ad consequatur debitis et. Et animi ipsum voluptatum iste beatae animi. Fugit excepturi quaerat voluptatem autem aut a neque. Quia vitae sed sit numquam ea. Temporibus cumque minima sit maxime. Qui est quia labore facere rem quaerat nihil. Ut facere ipsum laudantium molestiae maxime repellat ab. Est maxime occaecati id et omnis nihil eveniet. Fugiat laborum quam dolores perferendis occaecati explicabo. Laboriosam dolores rem consequuntur voluptatum perferendis. Quibusdam magnam non accusamus eos velit impedit ad. Recusandae molestiae voluptatem voluptatum et. Vitae recusandae aut nobis consequatur. Non impedit sapiente ea voluptatem quia dolorum.', 78.00, '2021-08-27', '2021-08-29', 6, 1, 3, 2, '2021-08-27 08:01:53', '2021-08-27 08:01:53'),
 (23, 'Recusandae illo iure inventore temporibus assumenda et sed quae.', 'recusandae-illo-iure-inventore-temporibus-assumenda-et-sed-quae', '206d5b2c9f96eb0bcdc50fe25cc63a3f.png', 'Ullam expedita repellendus occaecati sit voluptatem. Et deserunt dicta aperiam dolores minima. Omnis vel dolores excepturi quam et illum nostrum. Commodi corporis eveniet dicta excepturi voluptatem sapiente culpa omnis. Sed enim cum earum ex. Reiciendis accusantium quas sed eveniet debitis ab. Accusamus ullam deleniti nobis non perspiciatis modi totam sit. Beatae provident sed rerum est dolorum. Aut dignissimos eos nisi architecto. Sed quisquam omnis quibusdam qui quisquam magni omnis. Eligendi ea doloremque aspernatur ut tempore tempore. Dolorum consequatur sit alias architecto odio necessitatibus. Assumenda ipsam eligendi quaerat provident autem veritatis. Eaque mollitia sint qui totam natus voluptatem facilis voluptatem. Nisi labore est mollitia libero omnis. Unde saepe consectetur iure et et consequatur repudiandae totam. Facere ut voluptas odit error laboriosam. Veniam qui debitis sit nemo tempore omnis. Libero est enim sit autem porro. Est ab in ipsum similique in corporis.', 577.00, '2021-08-27', '2021-08-29', 49, 1, 8, 2, '2021-08-27 08:01:53', '2021-08-27 08:01:53'),
 (24, 'Maiores consequatur voluptate ea suscipit nostrum quis veritatis id.', 'maiores-consequatur-voluptate-ea-suscipit-nostrum-quis-veritatis-id', 'b898fc472264e4249cda671f804f85f2.png', 'Qui totam veritatis aut vel et consequuntur. Deserunt laboriosam est vitae nihil repudiandae ea. Ipsum ut dolores non laudantium. Quia dicta soluta repellat rerum odit consequatur qui nobis. Dignissimos explicabo inventore ipsam voluptatem et dolor eaque. Pariatur dignissimos autem maiores. Sit sint impedit ducimus deserunt. Illo fugiat voluptate rerum voluptate et eos. Rem voluptas quam doloremque dignissimos id. Possimus optio est in omnis qui. Expedita aperiam molestiae error et ex. Nobis dolores eveniet officia. Corrupti possimus eos excepturi et consectetur impedit ut. Beatae doloremque quasi fugiat quaerat tempore in voluptatem. Maiores quos vitae blanditiis qui quibusdam. Cupiditate vitae voluptatibus non provident. Error odio asperiores et labore doloribus. Accusamus dolore accusamus in quis consectetur vel. Fugiat quaerat autem minima commodi sequi sed. Reprehenderit aliquid et unde autem ipsam voluptate. A commodi et labore provident a. Cumque velit deleniti eum blanditiis. Qui et dignissimos dolores et reprehenderit. Et consectetur nobis minus iure ducimus minus dolorum. Deleniti voluptas nihil quas velit aut. Asperiores cum qui voluptas aut. Corporis aspernatur laborum rem debitis commodi provident amet. Recusandae omnis illo unde beatae quia repellendus. Error maiores qui omnis enim eligendi repellat aut nemo.', 327.00, '2021-08-27', '2021-08-31', 92, 0, 8, 2, '2021-08-27 08:01:53', '2021-08-27 08:01:53'),
-(25, 'Laudantium aut quam necessitatibus vel dolores impedit qui corrupti deserunt et.', 'laudantium-aut-quam-necessitatibus-vel-dolores-impedit-qui-corrupti-deserunt-et', 'e830abcbcb0a7dca41e789a2e438d374.png', 'Aperiam consequatur facere aperiam eaque fugit. Tempora libero neque sed officiis vero rem. Et nam mollitia nemo eligendi. Consequatur voluptate aut qui sed qui dolor deleniti similique. Quam amet recusandae est autem quasi. Velit magni aperiam quas enim dolorum harum. Omnis quas architecto illum ipsum. Corrupti dolorem aut dignissimos. Harum fugiat dolorem ut. Omnis odit ut voluptas est nisi. Suscipit nihil sed eos cupiditate. Velit fuga minus voluptatem sunt modi. Nesciunt est nobis magnam dolorum. Voluptas rerum et alias ut nemo ducimus. Ut cum hic nam esse enim rerum repellat. Unde voluptatem velit cum numquam. Voluptas voluptate placeat tempora. In ipsa in qui quae in. Qui natus molestiae est odit. Molestiae enim minus libero et impedit. Perspiciatis nihil qui dolorum laboriosam facilis eum eos. Eius quis qui rerum. Ullam porro voluptatem ut. Id sed exercitationem accusantium rem reiciendis facilis provident. Omnis amet veritatis et voluptates a temporibus cum. Ab optio aut accusamus cumque molestias. Ut molestias laudantium doloremque illum placeat. Ut perspiciatis rerum eum aut.', 301.00, '2021-08-27', '2021-08-30', 63, 1, 8, 12, '2021-08-27 08:01:53', '2021-08-27 08:01:53');
+(25, 'Laudantium aut quam necessitatibus vel dolores impedit qui corrupti deserunt et.', 'laudantium-aut-quam-necessitatibus-vel-dolores-impedit-qui-corrupti-deserunt-et', 'e830abcbcb0a7dca41e789a2e438d374.png', 'Aperiam consequatur facere aperiam eaque fugit. Tempora libero neque sed officiis vero rem. Et nam mollitia nemo eligendi. Consequatur voluptate aut qui sed qui dolor deleniti similique. Quam amet recusandae est autem quasi. Velit magni aperiam quas enim dolorum harum. Omnis quas architecto illum ipsum. Corrupti dolorem aut dignissimos. Harum fugiat dolorem ut. Omnis odit ut voluptas est nisi. Suscipit nihil sed eos cupiditate. Velit fuga minus voluptatem sunt modi. Nesciunt est nobis magnam dolorum. Voluptas rerum et alias ut nemo ducimus. Ut cum hic nam esse enim rerum repellat. Unde voluptatem velit cum numquam. Voluptas voluptate placeat tempora. In ipsa in qui quae in. Qui natus molestiae est odit. Molestiae enim minus libero et impedit. Perspiciatis nihil qui dolorum laboriosam facilis eum eos. Eius quis qui rerum. Ullam porro voluptatem ut. Id sed exercitationem accusantium rem reiciendis facilis provident. Omnis amet veritatis et voluptates a temporibus cum. Ab optio aut accusamus cumque molestias. Ut molestias laudantium doloremque illum placeat. Ut perspiciatis rerum eum aut.', 301.00, '2021-08-27', '2021-08-30', 63, 1, 8, 12, '2021-08-27 08:01:53', '2021-08-27 08:01:53'),
+(26, 'Voluptas et laboris porro quia', 'voluptas-et-laboris-porro-quia', 'XYHHqxuTaJHwJhNrIemcAHxxZ96leTFIi77AXTC6.jpg', 'Animi, eu sunt id cillum consequunt.d', 835.00, '2021-11-12', '2021-11-13', 23, 1, 8, 1, '2021-11-12 17:19:29', '2021-11-12 17:19:29');
 
 -- --------------------------------------------------------
 
@@ -306,6 +307,27 @@ CREATE TABLE `likes` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `logs`
+--
+
+CREATE TABLE `logs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `response` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `request` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `page` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `method` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `controller` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `model` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -338,7 +360,43 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (73, '2021_06_22_180910_create_ratings_table', 1),
 (74, '2021_06_26_222254_create_notifications_table', 1),
 (75, '2021_06_29_193421_create_favorites_table', 1),
-(76, '2021_06_30_220209_create_user_follow_table', 1);
+(76, '2021_06_30_220209_create_user_follow_table', 1),
+(77, '2021_11_12_052515_create_permission_tables', 2),
+(79, '2021_11_12_080420_create_logs_table', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_permissions`
+--
+
+CREATE TABLE `model_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_roles`
+--
+
+CREATE TABLE `model_has_roles` (
+  `role_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `model_has_roles`
+--
+
+INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
+(5, 'App\\Models\\User', 15),
+(6, 'App\\Models\\User', 15),
+(7, 'App\\Models\\User', 14),
+(12, 'App\\Models\\User', 14);
 
 -- --------------------------------------------------------
 
@@ -368,6 +426,29 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permissions`
+--
+
+CREATE TABLE `permissions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `permissions`
+--
+
+INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(9, 'test', 'web', '2021-11-12 05:31:52', '2021-11-12 05:31:52'),
+(10, 'sdfasdf', 'web', '2021-11-12 05:32:21', '2021-11-12 05:32:21'),
+(11, 'sdfbxcvz', 'web', '2021-11-12 05:32:26', '2021-11-12 05:32:26');
 
 -- --------------------------------------------------------
 
@@ -524,6 +605,56 @@ INSERT INTO `ratings` (`id`, `ratingable_type`, `ratingable_id`, `star`, `ip_add
 (98, 'App\\Models\\Course', 13, 5, '104.162.48.236', 'Opera/9.63 (Windows NT 6.1; sl-SI) Presto/2.9.290 Version/12.00'),
 (99, 'App\\Models\\Course', 15, 2, '227.201.138.81', 'Mozilla/5.0 (X11; Linux i686; rv:7.0) Gecko/20201218 Firefox/35.0'),
 (100, 'App\\Models\\Course', 22, 2, '37.89.37.47', 'Mozilla/5.0 (Windows 98) AppleWebKit/5330 (KHTML, like Gecko) Chrome/40.0.860.0 Mobile Safari/5330');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(5, 'super admin', 'web', '2021-11-12 04:27:57', '2021-11-12 04:27:57'),
+(6, 'admin', 'web', '2021-11-12 05:21:23', '2021-11-12 05:21:23'),
+(7, 'teacher', 'web', '2021-11-12 05:21:27', '2021-11-12 05:21:27'),
+(8, 'user', 'web', '2021-11-12 05:21:30', '2021-11-12 05:21:30'),
+(12, 'ceo', 'web', '2021-11-12 05:21:43', '2021-11-12 05:21:43'),
+(13, 'legal', 'web', '2021-11-12 05:21:48', '2021-11-12 05:21:48'),
+(14, 'sdfsd', 'web', '2021-11-12 07:23:43', '2021-11-12 07:23:43');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_has_permissions`
+--
+
+CREATE TABLE `role_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `role_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `role_has_permissions`
+--
+
+INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
+(9, 5),
+(9, 6),
+(9, 7),
+(9, 8),
+(10, 5),
+(11, 7);
 
 -- --------------------------------------------------------
 
@@ -803,8 +934,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `image`, `job`, `bio`, `email_verifi
 (9, 'Cierra Wolf', 'casandra.johnston@example.org', 'cb707944426a3fdb320f14773e4a7dc0.png', NULL, NULL, '2021-08-27 08:00:24', '$2y$10$nJ202Yh0XPvZ9VkUl54EgeQLwza.yjpdSG4gAt9SyjOLBFbNYn2fy', 0, 1, 'DZAceyGJT6', '2021-08-27 08:00:54', '2021-08-27 08:00:54'),
 (10, 'Daisha Halvorson Jr.', 'miller.forrest@example.org', '3ed527780fee5c84eb4510ae3b8c2882.png', NULL, NULL, '2021-08-27 08:00:31', '$2y$10$oyp0FU2f3l82VIBGFEo9KefT7QHU9Z7mZ9zgJaRyTeOic2UQ9QUA2', 0, 0, 'ctT1Mye2bA', '2021-08-27 08:00:54', '2021-08-27 08:00:54'),
 (11, 'Ms. Opal Schmitt', 'orion16@example.com', 'dbc93a2f3960c8d24b9c8caeba3905a3.png', NULL, NULL, '2021-08-27 08:00:48', '$2y$10$hzRwKJ4CddSVBR2fQXKBKOfaqBLIbWIycVQk4kfCly9CVsABEeJOu', 0, 1, 'UBYLfDu0dZ', '2021-08-27 08:00:54', '2021-08-27 08:00:54'),
-(12, 'Erwin Beahan', 'lacy.osinski@example.org', '5e03775cad2b97d3e5955058543e56e2.png', NULL, NULL, '2021-08-27 08:00:49', '$2y$10$MWvrrBIZd2kvO5Rd9E.EZ.YuzQt6SHn7AxngJrm7QF2lGg7zO1HZu', 0, 1, 'Wmn7ACMWTi', '2021-08-27 08:00:54', '2021-08-27 08:00:54'),
-(13, 'Billie Schiller', 'aufderhar.albertha@example.com', '498693f7d210699765bc6265e3a637ca.png', NULL, NULL, '2021-08-27 08:00:51', '$2y$10$gfoBMdcGKGiKLBcUDykEj.OETOvnypU6S0H49xW50./7VEngjA61O', 0, 1, 'IclTXu2nS3', '2021-08-27 08:00:54', '2021-08-27 08:00:54');
+(12, 'Erwin Beahan', 'lacy.osinski@example.org', '5e03775cad2b97d3e5955058543e56e2.png', NULL, NULL, '2021-08-27 08:00:49', '$2y$10$pV5EWRFm5gG0KQuXjOyVm.8BSHrSQGjafNmQ/BeGnBgVedOxT7c0m', 0, 1, 'Wmn7ACMWTi', '2021-08-27 08:00:54', '2021-11-12 17:17:38'),
+(13, 'Billie Schiller', 'aufderhar.albertha@example.com', '498693f7d210699765bc6265e3a637ca.png', NULL, NULL, '2021-08-27 08:00:51', '$2y$10$ZtFcXBBdu1Jxo8OIIxy1JOg3gWNeYLzr5Wr4JeguGpplyQ2EtTj3m', 0, 1, 'IclTXu2nS3', '2021-08-27 08:00:54', '2021-11-12 17:14:12'),
+(14, 'test', 'test@yahoo.com', 'yHzCdxHosYFPPTFK9fgckMGWIeoOCpZ84Fq3eRab.png', NULL, NULL, NULL, '$2y$10$rNOXqg5tkPpPgO7A8lU/KejofzcK/URmOOtx1vXT73FLdBWgoMQYi', 0, 0, NULL, '2021-11-12 16:07:13', '2021-11-12 17:25:03'),
+(15, 'Aretha Gillespie', 'zosa@mailinator.com', 'UIGCDkYz47RspicreBWxuYzzjYjsbUFgdO454Evk.png', NULL, NULL, NULL, '$2y$10$6pz78U.zH4EJDxmN0XmvOedcGIWX6qGbi81bgAs24vush4p9nkKZS', 0, 0, NULL, '2021-11-12 17:20:23', '2021-11-13 10:07:04');
 
 -- --------------------------------------------------------
 
@@ -1200,10 +1333,31 @@ ALTER TABLE `likes`
   ADD KEY `likes_likeable_type_likeable_id_index` (`likeable_type`,`likeable_id`);
 
 --
+-- Indexes for table `logs`
+--
+ALTER TABLE `logs`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `logs_user_id_foreign` (`user_id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
+-- Indexes for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
 -- Indexes for table `notifications`
@@ -1219,6 +1373,13 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Indexes for table `permissions`
+--
+ALTER TABLE `permissions`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
+
+--
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
@@ -1232,6 +1393,20 @@ ALTER TABLE `posts`
 ALTER TABLE `ratings`
   ADD PRIMARY KEY (`id`),
   ADD KEY `ratings_ratingable_type_ratingable_id_index` (`ratingable_type`,`ratingable_id`);
+
+--
+-- Indexes for table `roles`
+--
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`);
+
+--
+-- Indexes for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`role_id`),
+  ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
 
 --
 -- Indexes for table `sliders`
@@ -1309,7 +1484,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -1336,10 +1511,22 @@ ALTER TABLE `likes`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `logs`
+--
+ALTER TABLE `logs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+
+--
+-- AUTO_INCREMENT for table `permissions`
+--
+ALTER TABLE `permissions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `posts`
@@ -1352,6 +1539,12 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `ratings`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- AUTO_INCREMENT for table `roles`
+--
+ALTER TABLE `roles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `sliders`
@@ -1375,7 +1568,7 @@ ALTER TABLE `tags`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_follow`
@@ -1426,11 +1619,36 @@ ALTER TABLE `likes`
   ADD CONSTRAINT `likes_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `logs`
+--
+ALTER TABLE `logs`
+  ADD CONSTRAINT `logs_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
 -- Constraints for table `posts`
 --
 ALTER TABLE `posts`
   ADD CONSTRAINT `posts_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `slider_images`

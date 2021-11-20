@@ -44,7 +44,7 @@ class LogsDataTable extends DataTable
      */
     public function query(Log $model)
     {
-        return $model->newQuery()->with('user');
+        return $model->newQuery()->with('user')->select('logs.*', 'logs.id as log_id')->orderBy('logs.id', 'DESC');
     }
 
     /**

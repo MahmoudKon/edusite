@@ -16,8 +16,15 @@ class LogsController extends Controller
 
     public function show(Log $log)
     {
-        // dd($log);
         return $log->request;
-        // return $log->response;
+    }
+
+    public function showFieldData(Log $log, $field)
+    {
+        $data = ['data' => $log->response_content, 'title' => 'Show Log Response'];
+        if ($field == 'request')
+            $data = ['data' => $log->request, 'title' => 'Show Log Request'];
+
+        return response()->json($data, 200);
     }
 }

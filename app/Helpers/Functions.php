@@ -1,6 +1,10 @@
 <?php
 
 // function to return the dashboard files path
+
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+
 function path(string $path)
 {
     return asset('assets/backend/' . $path);
@@ -54,4 +58,25 @@ function generateUrl()
     $prefix = request()->route()->action['prefix']; // Get The Prefix Of Route
     $url = str_replace($prefix, '', request()->route()->uri);
     return explode('/', $url);
+}
+
+function getModelNameFromControllerName($controller)
+{
+    $controller = str_replace('Controller', '', last(explode('\\', $controller)));
+    $controller = Str::singular($controller);
+    $models = File::allFiles(base_path('app/Models'));
+
+    foreach ($models as $model) {
+        $model_name = str_replace([app_path(), '/', '.php'], ['App', '\\', ''], $model->getRealPath());
+        if (strpos($model_name, $controller))
+            return $model_name;
+    }
+
+    if ($controller == 'Permission')
+        return 'Spatie\Permission\Models\Permission';
+
+    if ($controller == 'Role')
+        return 'Spatie\Permission\Models\Role';
+
+    return 'No Model';
 }

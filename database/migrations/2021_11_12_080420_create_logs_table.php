@@ -15,14 +15,15 @@ class CreateLogsTable extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
-            $table->longText('response')->nullable();
+            $table->longText('response_headers')->nullable();
+            $table->longText('response_content')->nullable();
             $table->longText('request')->nullable();
             $table->text('message')->nullable();
-            $table->string('url', 60)->nullable();
-            $table->string('page', 20)->nullable();
-            $table->string('method', 20)->nullable();
-            $table->string('controller', 30)->nullable();
-            $table->string('model', 30)->nullable();
+            $table->string('url', 200)->nullable();
+            $table->string('page', 100)->nullable();
+            $table->string('method', 150)->nullable();
+            $table->string('controller', 200)->nullable();
+            $table->string('model', 200)->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
 
