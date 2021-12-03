@@ -35,6 +35,7 @@ class ProfileController extends Controller
     public function update(ValidateInformationsRequest $request)
     {
         $image = $request->has('image') ? $this->uploadImage($request->image, 'users') : auth()->user()->image;
+
         if (auth()->user()->update(array_merge($request->except('image'), ['image' => $image])))
             return response()->json(['message' => 'Your Informations Updated Successfully!'], 200);
 
