@@ -154,7 +154,8 @@
         }
     });
 
-    setInterval(function() { RunNotificationAjax($('#notify-count'), "{{ url('get/notifications/count') }}"); }, 3000);
+    if($('#notify-count').length)
+        setInterval(function() { RunNotificationAjax($('#notify-count'), "{{ url('get/notifications/count') }}"); }, 3000);
 
     // Load All Favorite When Click On Icon
     $('#favorite_click').click(function () {
