@@ -3,7 +3,7 @@
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use PHPUnit\TextUI\XmlConfiguration\Group;
+use Illuminate\Support\Facades\DB;
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Auth::routes();
@@ -50,4 +50,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         Route::get('profile/videos', 'Frontend\ProfileController@videos')->name('profile.videos');
         Route::get('profile/follow', 'Frontend\ProfileController@follow')->name('profile.follow');
     });
+});
+
+Route::post('get/notifications/count', function () {
+    return DB::select("SELECT count(*) AS `total` FROM `notifications` WHERE `notifiable_id` = " . auth()->id() . " AND `read_at` IS NULL")[0]->total;
 });

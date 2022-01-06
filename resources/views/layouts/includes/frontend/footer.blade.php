@@ -142,6 +142,8 @@
 
 <script src="{{ asset('assets/helper-script.js') }}"></script>
 <script>
+    let notify_count = 0;
+    let notificationSound = new Audio('{{ asset("assets/notification-sound.mp3") }}');
     // Load All Notifications When Click On Icon
     $('#noty_click').click(function () {
         if(! $(this).next('.dropdown-menu').hasClass('show')) {
@@ -151,6 +153,8 @@
             }, 2000);
         }
     });
+
+    setInterval(function() { RunNotificationAjax($('#notify-count'), "{{ url('get/notifications/count') }}"); }, 3000);
 
     // Load All Favorite When Click On Icon
     $('#favorite_click').click(function () {

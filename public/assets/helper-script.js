@@ -54,3 +54,16 @@ $(function () {
         });
     });
 });
+
+function RunNotificationAjax(ele, url, method = 'POST')
+{
+    $.ajax({
+        type: method,
+        url: url,
+        data: { _token: $('meta[name="csrf-token"]').attr('content') },
+        success: function (response) {
+            if (ele.text() < response) notificationSound.play();
+            ele.text(response);
+        }
+    });
+}

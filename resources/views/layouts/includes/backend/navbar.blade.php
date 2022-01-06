@@ -94,7 +94,7 @@
                     <li class="dropdown dropdown-notification nav-item">
                         <a id="noty_click" class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
                                 class="ficon ft-bell"></i>
-                            <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">
+                            <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow" id="notification_count">
                                 {{ $unReadNotifications_count }}{{-- Comming From Cache in Middleware --}}
                             </span>
                         </a>

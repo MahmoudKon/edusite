@@ -1,7 +1,7 @@
 $(function () {
-    $.ajaxSetup({
-        headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
-    }); // TO SEND THE CSRF TOKEN WITH AJAX REQUEST
+    let notificationSound = new Audio(`${window.location.origin}/assets/notification-sound.mp3`);
+
+    $.ajaxSetup({ headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') } }); // TO SEND THE CSRF TOKEN WITH AJAX REQUEST
 
     $(document).ajaxError(function(data, textStatus, jqXHR) {
         if (typeof textStatus.responseJSON !== 'undefined' && textStatus.responseJSON.message == 'Unauthenticated.') { location.reload(true); }
@@ -312,5 +312,36 @@ $(function () {
 
     function initPluginElements() {
         $(".select2").select2();
+    }
+
+    RunNotificationAjax();
+    setInterval(() => { RunNotificationAjax(); }, 3000);
+
+    function RunNotificationAjax()
+    {
+        $.ajax({
+            type: "POST",
+            url: `${window.location.origin}/get/notifications/count`,
+            success: function (response) {
+                if (parseInt($('#notification_count').text()) < parseInt(response)) {
+                    getLastNotification();
+                    notificationSound.play();
+                }
+                $('#notification_count').text(response);
+            }
+        });
+    }
+
+
+    function getLastNotification()
+    {
+        $.ajax({
+            type: "POST",
+            url: `${window.location.origin}/get/notifications/last`,
+            success: function (response) {
+                let data = JSON.parse(response.data);
+                toast(data.message, null, null);
+            }
+        });
     }
 });

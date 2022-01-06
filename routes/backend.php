@@ -1,7 +1,16 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Route;
+
+Route::post('get/notifications/count', function () {
+    return DB::select("SELECT count(*) AS `total` FROM `notifications` WHERE `notifiable_id` = " . auth()->id() . " AND `read_at` IS NULL")[0]->total;
+});
+
+Route::post('get/notifications/last', function () {
+    return DB::select("SELECT `data` FROM notifications WHERE `notifiable_id` = " . auth()->id() . " ORDER BY `id` DESC LIMIT 1")[0];
+});
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
 
